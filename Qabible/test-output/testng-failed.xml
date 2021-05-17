@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [DemoSuite]" parallel="methods">
+  <test thread-count="1" name="DemoTest(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.qabible.in/payrollapp/site/login"/>
+    <classes>
+      <class name="test_script.CompanyTest">
+        <methods>
+          <include name="browserLaunch"/>
+          <include name="verifyCompanyPageTitle"/>
+          <include name="browserClose"/>
+          <include name="verifyCompanyPage"/>
+        </methods>
+      </class> <!-- test_script.CompanyTest -->
+    </classes>
+  </test> <!-- DemoTest(failed) -->
+</suite> <!-- Failed suite [DemoSuite] -->
